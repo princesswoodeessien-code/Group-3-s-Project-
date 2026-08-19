@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Homeage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: mediumturquoise;
+            color: mediumturquiose;
+            padding: 8px 7%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: mediumturquoise;
+            color: #333;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: #111;
+            color: white;
+            padding: 8px 7%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        /* HEADER */
+        header {
+            background: mediumturquoise;
+            padding: 15px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #00843d;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    /* HERO SECTION */
+        .hero {
+            min-height: 500px;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 70, 35, 0.70),
+                    rgba(0, 0, 0, 0.55)
+                ),
+                url("/storage/emulated/0/Download/ai_image_1786742471638.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 2.0;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: mediumturquoise;
+            color: #111;
+            padding: 13px 28px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: #ffd633;
+        }
+  /* FOOTER */
+        footer {
+            background: #111;
+            color: white;
+            padding: 35px 7%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        footer h3 {
+            color: #f5c400;
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer a {
+            color: #ccc;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .copyright {
+            border-top: 1px solid #444;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .announcement-item {
+                flex-direction: column;
+            }
+        }
+  .image {
+       display: flex;
+            align-items: center;
+            gap: 10px;
+           width: 80px;
+            height: 80px;
+            border-radius: 180%;
+            background: #00843d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+  }
+  
+    </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+     <div class="image">
+    <img src="/storage/emulated/0/Pictures/Screenshots/Screenshot_20260818-123150~2.png" style="border-radius: 270px" width="75%">        
+    </div>   
+  <div class="container-fluid">           
+    <a class="navbar-brand" href="home.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+               <li class="nav-item">
+          <a class="nav-link" href="service.html">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="patient.html">Patient Info</a></li>
+            <li><a class="dropdown-item" href="consult.html">Consultation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="department.html">Departments</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  <!-- HERO / BACKGROUND -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>
+                Welcome to AuraLux Healthcare Centre
+            </h2>
+          <br>
+            <p>
+                Promoting quality health services, supporting health personnel
+                and empowering patients for a better future.
+              <br><br><br>
+            </p>
+            <a href="#services" class="btn">
+                Explore Our Services
+            </a>
+        </div>
+    </section>
+         
+  <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Healthcare Service</h3>
+                <p>
+                    Providing quality healthcare
+                    information and services.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p>
+                    <a href="#home">Home</a>
+                </p>
+                <p>
+                    <a href="#about">About Us</a>
+                </p>
+                <p>
+                    <a href="#services">Services</a>
+                </p>
+                <p>
+                    <a href="#news">News</a>
+                </p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>
+                    Accra, Ghana
+                </p>
+                <p>
+                    princesswoodeessien@gmail.com
+                </p>
+                <p>
+                    +233 256 029 886
+                </p>
+            </div>
+        </div>
+      
+        <div class="copyright">
+            © 2026 Healthcare Service Portal.
+            All Rights Reserved.
+            AuraLux!!             
+            The Light of YOUR Aura.
+        </div>
+    </footer>
+
+</body>
+
+</html>
